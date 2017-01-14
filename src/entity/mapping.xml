@@ -4,17 +4,19 @@
 
     <entity class="entity.Record">
         <table name="record" schema="javaEE" catalog=""/>
-        <id-class class="entity.RecordPK"/>
         <attributes>
-            <id name="word">
+            <id name="id">
+                <column name="id" />
+            </id>
+            <basic name="word">
                 <column name="word"/>
-            </id>
-            <id name="datetime">
+            </basic>
+            <basic name="datetime">
                 <column name="datetime" precision="-1"/>
-            </id>
-            <id name="user">
+            </basic>
+            <basic name="user">
                 <column name="user"/>
-            </id>
+            </basic>
         </attributes>
     </entity>
     <entity class="entity.User">

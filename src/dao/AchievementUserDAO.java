@@ -3,9 +3,9 @@ package dao;
 import entity.AchievementUser;
 import entity.AchievementUserPK;
 import org.hibernate.Session;
+
 import javax.persistence.Query;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 

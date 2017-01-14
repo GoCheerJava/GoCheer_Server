@@ -1,17 +1,9 @@
 package dao;
 
 import entity.Record;
-import entity.RecordPK;
-import entity.User;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 
 import javax.persistence.Query;
-import javax.persistence.criteria.CriteriaBuilder;
-import java.time.DateTimeException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,12 +17,12 @@ public class RecordDAO extends BaseDAO<Record> {
         return instance;
     }
 
-    public void delete(RecordPK pk) {
-        super.delete(Record.class, pk);
+    public void delete(int id) {
+        super.delete(Record.class, id);
     }
 
-    public Record findById(RecordPK pk) {
-        return super.findById(Record.class, pk);
+    public Record findById(int id) {
+        return super.findById(Record.class, id);
     }
 
     /**
